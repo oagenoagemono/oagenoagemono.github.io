@@ -2,6 +2,7 @@ body {
   display: flex;
   flex-direction: row;
   min-height: 100vh;
+  font-family: 'Raleway', sans-serif;
 }
 
 nav {
