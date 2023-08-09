@@ -1,0 +1,14 @@
+body {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+nav {
+  width: 10%;
+  height: 100%;
+}
+
+main {
+  height: 100%;
+}
