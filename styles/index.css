@@ -3,6 +3,9 @@ body {
   flex-direction: row;
   min-height: 100vh;
   font-family: 'Raleway', sans-serif;
+  background-color: #F7FFF6;
+  color: #2E1F27;
+  margin: 0;
 }
 
 nav {
