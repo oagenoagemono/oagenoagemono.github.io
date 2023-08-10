@@ -1,43 +1,5 @@
-
-body {
-  flex-direction: row;
-  width: 100vw;
-  height: 100vh;
-  font-family: 'Raleway', sans-serif;
-  background-color: #F7FFF6;
-  color: #2E1F27;
-  margin: 0;
-}
-
-nav {
-  width: 10vw;
-  height: 100vh;
-  min-height: 100vh;
-  background-color: #3A4F41;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-nav div {
-  display: block;
-  text-align: center;
-  width: 100%;
-  font-size: 100;
-}
-
-a {
-  color: #F7FFF6;
-  text-decoration: none;
-}
-
-main {
-  height: 100vh;
-  width: 90vw;
-}
-
-h1 {
+.name {
   font-size: 12vmin;
-  color: #3A4F41;
+  padding: 2vmin 0;
+  margin: 0;
 }

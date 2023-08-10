@@ -1,0 +1,11 @@
+.images {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 40vh;
+}
+
+.images img {
+  object-fit: scale-down;
+  height: 100%;
+}
