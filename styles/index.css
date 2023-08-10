@@ -25,7 +25,7 @@ nav div {
   display: block;
   text-align: center;
   width: 100%;
-  font-size: 16vmin;
+  font-size: 8vmin;
 }
 
 main {
@@ -34,6 +34,6 @@ main {
 }
 
 h1 {
-  font-size: 20vmin;
+  font-size: 12vmin;
   color: #3A4F41;
 }
