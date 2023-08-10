@@ -1,7 +1,8 @@
 
 body {
   flex-direction: row;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
   font-family: 'Raleway', sans-serif;
   background-color: #F7FFF6;
   color: #2E1F27;
@@ -9,8 +10,8 @@ body {
 }
 
 nav {
-  width: 10%;
-  height: 100%;
+  width: 10vw;
+  height: 100vh;
   min-height: 100vh;
   background-color: #3A4F41;
   color: #F7FFF6;
@@ -24,15 +25,15 @@ nav div {
   display: block;
   text-align: center;
   width: 100%;
-  font-size: 5vmin;
+  font-size: 16vmin;
 }
 
 main {
-  height: 100%;
-  width: 90%;
+  height: 100vh;
+  width: 90vw;
 }
 
 h1 {
-  font-size: 8vmin;
+  font-size: 20vmin;
   color: #3A4F41;
 }
