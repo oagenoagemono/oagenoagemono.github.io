@@ -1,6 +1,5 @@
 
 body {
-  display: flex;
   flex-direction: row;
   min-height: 100vh;
   font-family: 'Raleway', sans-serif;
@@ -12,6 +11,7 @@ body {
 nav {
   width: 10%;
   height: 100%;
+  min-height: 100vh;
   background-color: #3A4F41;
   color: #F7FFF6;
   display: flex;
@@ -20,15 +20,19 @@ nav {
   align-items: center;
 }
 
-nav a {
+nav div {
   display: block;
   text-align: center;
+  width: 100%;
+  font-size: 5vmin;
 }
 
 main {
   height: 100%;
+  width: 90%;
 }
 
 h1 {
-  font-size: large;
+  font-size: 8vmin;
+  color: #3A4F41;
 }
