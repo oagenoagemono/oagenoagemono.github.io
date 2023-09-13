@@ -1,5 +1,17 @@
+:root {
+  --text: #1d3223;
+  --background: #e9f6ee;
+  --primary: #B3E9AC;
+  --secondary: #425340;
+  --accent: #fff1d1;
+}
+
 * {
   box-sizing: border-box;
+}
+
+img {
+  pointer-events: none;
 }
 
 body {
@@ -12,44 +24,107 @@ body {
   padding: 0;
   overflow-x: hidden;
   overflow-y: auto;
+  background-color: var(--background);
+}
+
+header {
+  z-index: 2;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 1.5rem 2rem;
+  margin: 0;
+}
+
+header h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 8vh;
+  color: var(--secondary);
+}
+
+.header-background {
+  z-index: 2;
+  position: fixed;
+  height: 80vh;
+  top: 20vh;
+  left: 0;
+  fill: var(--primary);
 }
 
 nav {
-  flex: 1;
-  height: 100vh;
-  min-height: 100vh;
-  background-color: #3A4F41;
+  z-index: 2;
+  position: fixed;
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: space-evenly;
-  align-items: center;
+  left: 16vh;
+  top: 10vh;
+  height: 32vh;
 }
 
-nav div {
-  display: block;
+nav > div {
+  align-self: center;
+  padding: 1vh 2vh;
+  border-radius: 3vh;
   text-align: center;
-  width: 80%;
-  font-size: 3vmin;
+  background-color: transparent;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
 }
 
-nav div a {
-  color: #F7FFF6;
-  text-decoration: none;
+nav > div:hover {
+  background-color: color-mix(in srgb, var(--accent) 30%, transparent);
+}
+
+nav > div > a {
+  color: var(--background);
+  font-size: 2.5vh;
+}
+
+.selected {
+  background-color: var(--accent);
+}
+
+.selected:hover {
+  background-color: color-mix(in srgb, var(--accent) 80%, transparent);
+}
+
+.selected > a {
+  color: var(--secondary);
+  
+}
+
+.nav-background {
+  z-index: 1;
+  fill: var(--secondary);
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 80vh;
 }
 
 main {
-  height: 100vh;
-  flex: 9;
-  background-color: #F7FFF6;
-  color: #2E1F27;
-  padding: 3vh 3vw;
+  z-index: 1;
+  height: fit-content;
+  margin-left: 38vh;
+  margin-top: 6vh;
+  max-width: 100vh;
+  color: var(--text);
+  padding: 2rem;
+  padding-bottom: 22vh;
 }
 
-h1 {
-  font-size: 9vmin;
-  color: #3A4F41;
+.main-background {
+  position: fixed;
+  z-index: 0;
+  height: 110vh;
+  top: -5vh;
+  left: 15vh;
 }
 
 a {
-  color: #061A40;
+  text-decoration: none;
 }
